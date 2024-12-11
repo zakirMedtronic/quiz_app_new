@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Jessica Singhal</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <!-- Sign Up Screen -->
+    <div id="signUpScreen">
+        <h2>Sign Up</h2>
+        <input type="text" id="firstName" placeholder="First Name"> <br>
+        <input type="text" id="lastName" placeholder="Last Name"> <br>
+        <input type="text" id="employeeId" placeholder="Employee ID"> <br>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <p> Hiteshi </p>
+        <a href="about.html" target="_self">About</a>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" class="hidden">
+        <h2>Question <span id="questionNumber">1</span>/5</h2>
+        <p id="questionText">Question text goes here</p>
+        <ul id="answerList"></ul>
+        <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="resultsScreen" class="hidden">
+        <h2>Results</h2>
+        <p id="correctAnswersCount"></p>
+        <p id="timeSpent"></p>
+    </div>
+
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
